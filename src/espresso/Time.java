@@ -1,3 +1,4 @@
+package espresso;
 
 public class Time {
 	private short day;

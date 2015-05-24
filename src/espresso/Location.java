@@ -1,3 +1,4 @@
+package espresso;
 
 public class Location {
 	private String adress;

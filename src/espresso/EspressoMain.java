@@ -1,3 +1,4 @@
+package espresso;
 import java.io.*;
 import java.util.Scanner;
 
@@ -43,6 +44,7 @@ public class EspressoMain {
 	}
 	
 	public static void addLesson() {
+		
 		Time tijd = new Time();
 		Location location = new Location("J007");
 		Lesson lesson = new Lesson("Hoorcollege", "Fysica", tijd, 5100, location);
