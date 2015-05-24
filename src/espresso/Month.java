@@ -1,16 +1,27 @@
 package espresso;
 
 public enum Month {
-	JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER;
+	JANUARY("01"), 
+	FEBRUARY("02"),
+	MARCH("03"), 
+	APRIL("04"), 
+	MAY("05"), 
+	JUNE("06"), 
+	JULY("07"), 
+	AUGUST("08"), 
+	SEPTEMBER("09"), 
+	OCTOBER("10"), 
+	NOVEMBER("11"), 
+	DECEMBER("12");
+	
+	private String data;
+	
+	Month(String data) {
+		this.data = data;
+	}
 	
 	public String toData() {
-		switch (this) {
-		case JANUARY: 
-			return "01";
-		case FEBRUARY:
-			return "02";
-			default: return "00";
-		}
+		return this.data;
 	}
 	
 }
