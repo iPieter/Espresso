@@ -24,6 +24,18 @@ public class Time {
 		this.minute = minute;
 	}
 	
+	//this is the fun one :-)
+	public Time(int weekNumber, Day day, short hour, short minute ) {
+		//a week number-week is supposed to start before thursday.
+		//for example: jan 1st is a friday. week 1 will start on jan 4th.
+		
+		if (day.getOrder() >= Day.THURSDAY.getOrder()) {
+			//week 1 start this week
+		} else {
+			//week 1 starts 'next' week. This is fun, isn't it?
+		}
+	}
+	
 	//gets
 	String getYear() {
 		return "" + this.year; //needs to be fixed
